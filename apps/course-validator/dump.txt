@@ -1,0 +1,315 @@
+• Packages in scope: course-validator
+• Running dev in 1 packages
+• Remote caching disabled
+course-validator:dev: cache bypass, force executing 55ddddf6ba887758
+course-validator:dev: 
+course-validator:dev: > course-validator@1.0.0 dev /home/marco-vb/ni/merch-site/apps/course-validator
+course-validator:dev: > nodemon
+course-validator:dev: 
+course-validator:dev: [33m[nodemon] 3.0.1[39m
+course-validator:dev: [33m[nodemon] to restart at any time, enter `rs`[39m
+course-validator:dev: [33m[nodemon] watching path(s): *.*[39m
+course-validator:dev: [33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+course-validator:dev: [32m[nodemon] starting `node src/index.js`[39m
+course-validator:dev: Server running on port 8080
+course-validator:dev: COOKEIIIEISOJEISIESIE
+course-validator:dev: undefined
+course-validator:dev: undefined
+course-validator:dev: file:///home/marco-vb/ni/merch-site/apps/course-validator/src/index.js:46
+course-validator:dev:     for (const element of res) {
+course-validator:dev:                           ^
+course-validator:dev: 
+course-validator:dev: TypeError: res is not iterable
+course-validator:dev:     at ClientRequest.<anonymous> (file:///home/marco-vb/ni/merch-site/apps/course-validator/src/index.js:46:27)
+course-validator:dev:     at Object.onceWrapper (node:events:642:26)
+course-validator:dev:     at ClientRequest.emit (node:events:527:28)
+course-validator:dev:     at HTTPParser.parserOnIncomingClient [as onIncoming] (node:_http_client:631:27)
+course-validator:dev:     at HTTPParser.parserOnHeadersComplete (node:_http_common:117:17)
+course-validator:dev:     at TLSSocket.socketOnData (node:_http_client:494:22)
+course-validator:dev:     at TLSSocket.emit (node:events:527:28)
+course-validator:dev:     at addChunk (node:internal/streams/readable:324:12)
+course-validator:dev:     at readableAddChunk (node:internal/streams/readable:297:9)
+course-validator:dev:     at Readable.push (node:internal/streams/readable:234:10)
+course-validator:dev: 
+course-validator:dev: Node.js v18.0.0
+course-validator:dev: [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+course-validator:dev: [32m[nodemon] restarting due to changes...[39m
+course-validator:dev: [32m[nodemon] starting `node src/index.js`[39m
+course-validator:dev: Server running on port 8080
+course-validator:dev: [32m[nodemon] restarting due to changes...[39m
+course-validator:dev: [32m[nodemon] starting `node src/index.js`[39m
+course-validator:dev: Server running on port 8080
+course-validator:dev: COOKEIIIEISOJEISIESIE
+course-validator:dev: undefined
+course-validator:dev: undefined
+course-validator:dev: _readableState
+course-validator:dev: _events
+course-validator:dev: _eventsCount
+course-validator:dev: _maxListeners
+course-validator:dev: socket
+course-validator:dev: httpVersionMajor
+course-validator:dev: httpVersionMinor
+course-validator:dev: httpVersion
+course-validator:dev: complete
+course-validator:dev: rawHeaders
+course-validator:dev: rawTrailers
+course-validator:dev: aborted
+course-validator:dev: upgrade
+course-validator:dev: url
+course-validator:dev: method
+course-validator:dev: statusCode
+course-validator:dev: statusMessage
+course-validator:dev: client
+course-validator:dev: _consuming
+course-validator:dev: _dumped
+course-validator:dev: req
+course-validator:dev: setTimeout
+course-validator:dev: _read
+course-validator:dev: _destroy
+course-validator:dev: _addHeaderLines
+course-validator:dev: _addHeaderLine
+course-validator:dev: _dump
+course-validator:dev: destroy
+course-validator:dev: _undestroy
+course-validator:dev: push
+course-validator:dev: unshift
+course-validator:dev: isPaused
+course-validator:dev: setEncoding
+course-validator:dev: read
+course-validator:dev: pipe
+course-validator:dev: unpipe
+course-validator:dev: on
+course-validator:dev: addListener
+course-validator:dev: removeListener
+course-validator:dev: off
+course-validator:dev: removeAllListeners
+course-validator:dev: resume
+course-validator:dev: pause
+course-validator:dev: wrap
+course-validator:dev: iterator
+course-validator:dev: setMaxListeners
+course-validator:dev: getMaxListeners
+course-validator:dev: emit
+course-validator:dev: prependListener
+course-validator:dev: once
+course-validator:dev: prependOnceListener
+course-validator:dev: listeners
+course-validator:dev: rawListeners
+course-validator:dev: listenerCount
+course-validator:dev: eventNames
+course-validator:dev: file:///home/marco-vb/ni/merch-site/apps/course-validator/src/index.js:51
+course-validator:dev:         SI_SECURITY: res.cookies.SI_SECURITY?.value,
+course-validator:dev:                                  ^
+course-validator:dev: 
+course-validator:dev: TypeError: Cannot read properties of undefined (reading 'SI_SECURITY')
+course-validator:dev:     at IncomingMessage.<anonymous> (file:///home/marco-vb/ni/merch-site/apps/course-validator/src/index.js:51:34)
+course-validator:dev:     at IncomingMessage.emit (node:events:527:28)
+course-validator:dev:     at addChunk (node:internal/streams/readable:324:12)
+course-validator:dev:     at readableAddChunk (node:internal/streams/readable:297:9)
+course-validator:dev:     at Readable.push (node:internal/streams/readable:234:10)
+course-validator:dev:     at HTTPParser.parserOnBody (node:_http_common:130:24)
+course-validator:dev:     at TLSSocket.socketOnData (node:_http_client:494:22)
+course-validator:dev:     at TLSSocket.emit (node:events:527:28)
+course-validator:dev:     at addChunk (node:internal/streams/readable:324:12)
+course-validator:dev:     at readableAddChunk (node:internal/streams/readable:297:9)
+course-validator:dev: 
+course-validator:dev: Node.js v18.0.0
+course-validator:dev: [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+course-validator:dev: [32m[nodemon] restarting due to changes...[39m
+course-validator:dev: [32m[nodemon] starting `node src/index.js`[39m
+course-validator:dev: Server running on port 8080
+course-validator:dev: [32m[nodemon] restarting due to changes...[39m
+course-validator:dev: [32m[nodemon] starting `node src/index.js`[39m
+course-validator:dev: Server running on port 8080
+course-validator:dev: COOKEIIIEISOJEISIESIE
+course-validator:dev: undefined
+course-validator:dev: undefined
+course-validator:dev: _readableState
+course-validator:dev: _events
+course-validator:dev: _eventsCount
+course-validator:dev: _maxListeners
+course-validator:dev: socket
+course-validator:dev: httpVersionMajor
+course-validator:dev: httpVersionMinor
+course-validator:dev: httpVersion
+course-validator:dev: complete
+course-validator:dev: rawHeaders
+course-validator:dev: rawTrailers
+course-validator:dev: aborted
+course-validator:dev: upgrade
+course-validator:dev: url
+course-validator:dev: method
+course-validator:dev: statusCode
+course-validator:dev: statusMessage
+course-validator:dev: client
+course-validator:dev: _consuming
+course-validator:dev: _dumped
+course-validator:dev: req
+course-validator:dev: setTimeout
+course-validator:dev: _read
+course-validator:dev: _destroy
+course-validator:dev: _addHeaderLines
+course-validator:dev: _addHeaderLine
+course-validator:dev: _dump
+course-validator:dev: destroy
+course-validator:dev: _undestroy
+course-validator:dev: push
+course-validator:dev: unshift
+course-validator:dev: isPaused
+course-validator:dev: setEncoding
+course-validator:dev: read
+course-validator:dev: pipe
+course-validator:dev: unpipe
+course-validator:dev: on
+course-validator:dev: addListener
+course-validator:dev: removeListener
+course-validator:dev: off
+course-validator:dev: removeAllListeners
+course-validator:dev: resume
+course-validator:dev: pause
+course-validator:dev: wrap
+course-validator:dev: iterator
+course-validator:dev: setMaxListeners
+course-validator:dev: getMaxListeners
+course-validator:dev: emit
+course-validator:dev: prependListener
+course-validator:dev: once
+course-validator:dev: prependOnceListener
+course-validator:dev: listeners
+course-validator:dev: rawListeners
+course-validator:dev: listenerCount
+course-validator:dev: eventNames
+course-validator:dev: file:///home/marco-vb/ni/merch-site/apps/course-validator/src/index.js:49
+course-validator:dev:     console.log(rawHeaders);
+course-validator:dev:                 ^
+course-validator:dev: 
+course-validator:dev: ReferenceError: rawHeaders is not defined
+course-validator:dev:     at ClientRequest.<anonymous> (file:///home/marco-vb/ni/merch-site/apps/course-validator/src/index.js:49:17)
+course-validator:dev:     at Object.onceWrapper (node:events:642:26)
+course-validator:dev:     at ClientRequest.emit (node:events:527:28)
+course-validator:dev:     at HTTPParser.parserOnIncomingClient [as onIncoming] (node:_http_client:631:27)
+course-validator:dev:     at HTTPParser.parserOnHeadersComplete (node:_http_common:117:17)
+course-validator:dev:     at TLSSocket.socketOnData (node:_http_client:494:22)
+course-validator:dev:     at TLSSocket.emit (node:events:527:28)
+course-validator:dev:     at addChunk (node:internal/streams/readable:324:12)
+course-validator:dev:     at readableAddChunk (node:internal/streams/readable:297:9)
+course-validator:dev:     at Readable.push (node:internal/streams/readable:234:10)
+course-validator:dev: 
+course-validator:dev: Node.js v18.0.0
+course-validator:dev: [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+course-validator:dev: [32m[nodemon] restarting due to changes...[39m
+course-validator:dev: [32m[nodemon] starting `node src/index.js`[39m
+course-validator:dev: Server running on port 8080
+course-validator:dev: [32m[nodemon] restarting due to changes...[39m
+course-validator:dev: [32m[nodemon] starting `node src/index.js`[39m
+course-validator:dev: Server running on port 8080
+course-validator:dev: [32m[nodemon] restarting due to changes...[39m
+course-validator:dev: [32m[nodemon] starting `node src/index.js`[39m
+course-validator:dev: Server running on port 8080
+course-validator:dev: [32m[nodemon] restarting due to changes...[39m
+course-validator:dev: [32m[nodemon] starting `node src/index.js`[39m
+course-validator:dev: Server running on port 8080
+course-validator:dev: COOKEIIIEISOJEISIESIE
+course-validator:dev: undefined
+course-validator:dev: undefined
+course-validator:dev: _readableState
+course-validator:dev: _events
+course-validator:dev: _eventsCount
+course-validator:dev: _maxListeners
+course-validator:dev: socket
+course-validator:dev: httpVersionMajor
+course-validator:dev: httpVersionMinor
+course-validator:dev: httpVersion
+course-validator:dev: complete
+course-validator:dev: rawHeaders
+course-validator:dev: rawTrailers
+course-validator:dev: aborted
+course-validator:dev: upgrade
+course-validator:dev: url
+course-validator:dev: method
+course-validator:dev: statusCode
+course-validator:dev: statusMessage
+course-validator:dev: client
+course-validator:dev: _consuming
+course-validator:dev: _dumped
+course-validator:dev: req
+course-validator:dev: setTimeout
+course-validator:dev: _read
+course-validator:dev: _destroy
+course-validator:dev: _addHeaderLines
+course-validator:dev: _addHeaderLine
+course-validator:dev: _dump
+course-validator:dev: destroy
+course-validator:dev: _undestroy
+course-validator:dev: push
+course-validator:dev: unshift
+course-validator:dev: isPaused
+course-validator:dev: setEncoding
+course-validator:dev: read
+course-validator:dev: pipe
+course-validator:dev: unpipe
+course-validator:dev: on
+course-validator:dev: addListener
+course-validator:dev: removeListener
+course-validator:dev: off
+course-validator:dev: removeAllListeners
+course-validator:dev: resume
+course-validator:dev: pause
+course-validator:dev: wrap
+course-validator:dev: iterator
+course-validator:dev: setMaxListeners
+course-validator:dev: getMaxListeners
+course-validator:dev: emit
+course-validator:dev: prependListener
+course-validator:dev: once
+course-validator:dev: prependOnceListener
+course-validator:dev: listeners
+course-validator:dev: rawListeners
+course-validator:dev: listenerCount
+course-validator:dev: eventNames
+course-validator:dev: [
+course-validator:dev:   'Date',
+course-validator:dev:   'Sat, 23 Sep 2023 17:46:11 GMT',
+course-validator:dev:   'Server',
+course-validator:dev:   'Apache',
+course-validator:dev:   'X-Frame-Options',
+course-validator:dev:   'SAMEORIGIN',
+course-validator:dev:   'Strict-Transport-Security',
+course-validator:dev:   'max-age=63072000; includeSubDomains; preload',
+course-validator:dev:   'Content-Length',
+course-validator:dev:   '19605',
+course-validator:dev:   'Content-Type',
+course-validator:dev:   'text/html; charset=iso-8859-15',
+course-validator:dev:   'Content-Language',
+course-validator:dev:   'en',
+course-validator:dev:   'Set-Cookie',
+course-validator:dev:   'HTTP_SESSION=279760142;path=/;secure;HttpOnly',
+course-validator:dev:   'Connection',
+course-validator:dev:   'close'
+course-validator:dev: ]
+course-validator:dev: [ 'HTTP_SESSION=279760142;path=/;secure;HttpOnly' ]
+course-validator:dev: file:///home/marco-vb/ni/merch-site/apps/course-validator/src/index.js:53
+course-validator:dev:         SI_SECURITY: res.cookies.SI_SECURITY?.value,
+course-validator:dev:                                  ^
+course-validator:dev: 
+course-validator:dev: TypeError: Cannot read properties of undefined (reading 'SI_SECURITY')
+course-validator:dev:     at IncomingMessage.<anonymous> (file:///home/marco-vb/ni/merch-site/apps/course-validator/src/index.js:53:34)
+course-validator:dev:     at IncomingMessage.emit (node:events:527:28)
+course-validator:dev:     at addChunk (node:internal/streams/readable:324:12)
+course-validator:dev:     at readableAddChunk (node:internal/streams/readable:297:9)
+course-validator:dev:     at Readable.push (node:internal/streams/readable:234:10)
+course-validator:dev:     at HTTPParser.parserOnBody (node:_http_common:130:24)
+course-validator:dev:     at TLSSocket.socketOnData (node:_http_client:494:22)
+course-validator:dev:     at TLSSocket.emit (node:events:527:28)
+course-validator:dev:     at addChunk (node:internal/streams/readable:324:12)
+course-validator:dev:     at readableAddChunk (node:internal/streams/readable:297:9)
+course-validator:dev: 
+course-validator:dev: Node.js v18.0.0
+course-validator:dev: [31m[nodemon] app crashed - waiting for file changes before starting...[39m
+course-validator:dev: [32m[nodemon] restarting due to changes...[39m
+course-validator:dev: [32m[nodemon] starting `node src/index.js`[39m
+course-validator:dev: Server running on port 8080
+course-validator:dev: [32m[nodemon] restarting due to changes...[39m
+course-validator:dev: [32m[nodemon] starting `node src/index.js`[39m
+course-validator:dev: Server running on port 8080
+course-validator:dev:  ELIFECYCLE  Command failed.
