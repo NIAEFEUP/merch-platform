@@ -9,3 +9,89 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model User {
+  id String @id @default(cuid())
+  accounts Account[]
+  organizations Organization[]
+  votes Vote[]
+}
+
+model Account{
+  id                 String  @id @default(cuid())
+  userId             String  @map("user_id")
+  provider           String
+  providerAccountId  String  @map("provider_account_id")
+  refresh_token      String?
+  access_token       String?
+  expires_at         Int?
+  token_type         String?
+  scope              String?
+  id_token           String?
+  session_state      String?
+  oauth_token_secret String?
+  oauth_token        String?
+  password_hash      String?
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@unique([provider, providerAccountId])
+}
+
+enum OrganizationType {
+  SUPER_ADMIN
+  STUDENT_BRANCH
+}
+
+model Organization {
+  id String @id @default(cuid())
+  name String @unique
+  email String @unique
+  users User[]
+  events Event[]
+  type OrganizationType
+}
+
+model Course {
+  sigarraId Int @id
+  acronym String
+  name String
+  events Event[]
+}
+
+model Event {
+  id String @id @default(cuid())
+  courses Course[]
+  categories Category[]
+  name String
+  imagePath String
+  configuration Json
+  organizationId String? 
+  organization Organization? @relation(fields: [organizationId], references: [id], onDelete: SetNull) 
+}
+
+model Category {
+  id String @id @default(cuid())
+  title String
+  eventId String
+  items Item[]
+  event Event @relation(fields: [eventId], references: [id], onDelete: Cascade)
+}
+
+model Item {
+  id String @id @default(cuid())
+  name String
+  imagePath String
+  tags String[]
+  categoryId String
+  category Category @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  votes Vote[]
+}
+
+
+model Vote {
+  userId String
+  itemId String
+  value Boolean
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  item Item @relation(fields: [itemId], references: [id], onDelete: Cascade)
+  @@id([userId, itemId])
+}
