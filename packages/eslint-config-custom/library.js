@@ -34,5 +34,6 @@ module.exports = {
   // add rules configurations here
   rules: {
     "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/consistent-type-definitions": ["error", "type"],
   }
 };
