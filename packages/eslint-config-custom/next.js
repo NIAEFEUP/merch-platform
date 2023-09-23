@@ -18,6 +18,7 @@ module.exports = {
     "@vercel/style-guide/eslint/typescript",
     "@vercel/style-guide/eslint/react",
     "@vercel/style-guide/eslint/next",
+    "next/core-web-vitals",
     "eslint-config-turbo",
   ].map(require.resolve),
   parserOptions: {
@@ -34,7 +35,7 @@ module.exports = {
       },
     },
   },
-  ignorePatterns: ["node_modules/", "dist/"],
+  ignorePatterns: ["node_modules/", "dist/", ".next/"],
   // add rules configurations here
   rules: {
     "import/no-default-export": "off",
