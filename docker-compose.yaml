@@ -10,7 +10,7 @@ services:
     ports:
       - 3000:3000
     environment:
-      - DB_HOST=postgres
+      - DATABASE_URL="postgresql://postgres:postgres@postgres:5432/merch"
     networks:
       - app_network
 
