@@ -1,0 +1,4 @@
+ni.fe.up.pt {
+	tls /localhost.cert /localhost.key
+	reverse_proxy web-dev:80
+}
