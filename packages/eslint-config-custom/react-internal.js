@@ -32,8 +32,9 @@ module.exports = {
     },
   },
   ignorePatterns: ["node_modules/", "dist/", ".eslintrc.js"],
-
+  // add rules configurations here
   rules: {
-    // add specific rules configurations here
-  },
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/consistent-type-definitions": ["error", "type"],
+  }
 };
