@@ -18,7 +18,7 @@ module.exports = {
     "@vercel/style-guide/eslint/typescript",
     "@vercel/style-guide/eslint/react",
     "@vercel/style-guide/eslint/next",
-    "next/core-web-vitals",
+    "eslint-config-next/core-web-vitals",
     "eslint-config-turbo",
   ].map(require.resolve),
   parserOptions: {
