@@ -5,17 +5,23 @@
     "composite": false,
     "declaration": true,
     "declarationMap": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
     "inlineSources": false,
+
+    "esModuleInterop": true,
     "isolatedModules": true,
     "moduleResolution": "node",
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
-    "preserveWatchOutput": true,
+    "resolveJsonModule": true,
+    
+    "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
+    "verbatimModuleSyntax": true,
+    
+    "preserveWatchOutput": true,
+    
     "strict": true,
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "noUnusedParameters": false,
+    "noUnusedLocals": false
   },
   "exclude": ["node_modules"]
 }

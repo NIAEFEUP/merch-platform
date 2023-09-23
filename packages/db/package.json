@@ -2,13 +2,14 @@
   "name": "db",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
+  "main": "./index.ts",
+  "types": "./index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push --skip-generate",
+    "db:studio": "prisma studio"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "prisma": "^5.3.1"
   },
