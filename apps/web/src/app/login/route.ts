@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 import { Issuer } from 'openid-client';
 import { generators } from 'openid-client';
-import { AuthSession } from "./authTypes";
+import type { AuthSession } from "./auth-types";
 
 
 export async function GET(req: NextRequest) {
@@ -31,7 +31,7 @@ export async function GET(req: NextRequest) {
         code_challenge,
         code_challenge_method: 'S256',
     });
-    
+
     const res = NextResponse.redirect(url);    
     const session = await getSession<AuthSession>(req, res, 'authSession');
     session.codeVerifier = code_verifier;

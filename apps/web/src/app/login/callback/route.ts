@@ -1,7 +1,7 @@
 import { getSession } from "@/session";
 import { NextRequest, NextResponse } from "next/server";
-import { Issuer, generators } from "openid-client";
-import { AuthSession } from "../authTypes";
+import { Issuer } from "openid-client";
+import type { AuthSession } from "../auth-types";
 import { redirect } from "next/navigation";
 
 
