@@ -1,9 +1,9 @@
-import { getSession } from "@/session";
 import { NextRequest, NextResponse } from "next/server";
 
 import { Issuer } from 'openid-client';
 import { generators } from 'openid-client';
 import type { AuthSession } from "./auth-types";
+import { getSession } from "../../session";
 
 
 export async function GET(req: NextRequest) {
