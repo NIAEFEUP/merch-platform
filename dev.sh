@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-if [ "$EUID" -ne 0 ]
+if [ "$EUID" -ne 0 ];
   then echo "Please run as root. This is due to some overriding in certificates and the hosts file"
   exit
 fi
@@ -26,9 +26,9 @@ fi
 init_containers () (
     trap - INT
     if [ -x "$(command -v podman-compose)" ]; then
-        podman-compose up
+        podman-compose up web-dev
     else
-        docker-compose up
+        docker-compose up web-dev
     fi
 )
 

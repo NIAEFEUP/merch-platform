@@ -2,6 +2,19 @@ version: "3"
 
 
 services:
+
+  web-prod:
+    container_name: web-prod
+    build:
+      context: .
+      dockerfile: ./apps/web/Dockerfile
+    restart: always
+    ports:
+      - 3000:3000
+    environment:
+      - DATABASE_URL="postgresql://postgres:postgres@postgres:5432/merch"
+    depends_on:
+      - postgres
   web-dev:
     container_name: web-dev
     build:
@@ -14,7 +27,9 @@ services:
       # the default (if any) store, so we override the root node_modules and the local store
       - /app/node_modules
       - /app/.pnpm-store
-
+    depends_on:
+      - caddy
+      - postgres
     # FIXME(luisd): when UPDigital gives us a localhost redirect_uri we can change it back
     # for now, we use caddy for ssl termination (and a script to redirect 
     # ni.fe.up.pt to localhost while it's running)
