@@ -20,6 +20,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    ports:
+      - 3000:3000
     volumes:
       - .:/app
       # NOTE(luisd): this is the main downsize of using volumes and pnpm
@@ -28,23 +30,18 @@ services:
       - /app/node_modules
       - /app/.pnpm-store
     depends_on:
-      - caddy
       - postgres
-    # FIXME(luisd): when UPDigital gives us a localhost redirect_uri we can change it back
-    # for now, we use caddy for ssl termination (and a script to redirect 
-    # ni.fe.up.pt to localhost while it's running)
-    #ports:
-    #  - 3000:3000 
-  # caddy is also necessary while we sort the redirect_uri out
-  caddy:
-    image: docker.io/caddy
+      - keycloak
+  keycloak:
+    image: quay.io/keycloak/keycloak:22.0
+    environment:
+      - KEYCLOAK_ADMIN=admin
+      - KEYCLOAK_ADMIN_PASSWORD=admin
+    entrypoint: /opt/keycloak/bin/kc.sh start-dev --import-realm
     ports:
-      - 80:80
-      - 443:443
+      - 8080:8080
     volumes:
-      - ./Caddyfile:/etc/caddy/Caddyfile
-      - ./localhost.cert:/localhost.cert
-      - ./localhost.key:/localhost.key
+      - ./keycloak:/opt/keycloak/data/import
   postgres:
     image: docker.io/postgres:16
     restart: always
@@ -52,4 +49,5 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
 
+    
     
