@@ -34,3 +34,9 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# tls certificates
+localhost*
+
+#docker local store
+.pnpm-store/

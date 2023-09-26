@@ -1,6 +1,8 @@
 version: "3"
 
+
 services:
+
   web-prod:
     container_name: web-prod
     build:
@@ -11,23 +13,41 @@ services:
       - 3000:3000
     environment:
       - DATABASE_URL="postgresql://postgres:postgres@postgres:5432/merch"
-    networks:
-      - app_network
-
+    depends_on:
+      - postgres
+  web-dev:
+    container_name: web-dev
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/app
+      # NOTE(luisd): this is the main downsize of using volumes and pnpm
+      # pnpm requires a store, but because it's inside of a container we can't access
+      # the default (if any) store, so we override the root node_modules and the local store
+      - /app/node_modules
+      - /app/.pnpm-store
+    depends_on:
+      - postgres
+      - keycloak
+  keycloak:
+    image: quay.io/keycloak/keycloak:22.0
+    environment:
+      - KEYCLOAK_ADMIN=admin
+      - KEYCLOAK_ADMIN_PASSWORD=admin
+    entrypoint: /opt/keycloak/bin/kc.sh start-dev --import-realm
+    ports:
+      - 8080:8080
+    volumes:
+      - ./keycloak:/opt/keycloak/data/import
   postgres:
-    image: postgres:16
+    image: docker.io/postgres:16
     restart: always
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-    ports:
-      - "5432:5432"
-    expose:
-      - "5432"
-    networks:
-      - app_network
 
-# Define a network, which allows containers to communicate
-# with each other, by using their container name as a hostname
-networks:
-  app_network:
+    
+    

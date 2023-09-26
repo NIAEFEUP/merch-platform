@@ -1,4 +1,4 @@
-FROM node:20 AS base
+FROM docker.io/node:20 AS base
  
 RUN apt-get update
 RUN apt-get install -y build-essential
@@ -30,7 +30,7 @@ RUN pnpm install
 COPY --from=builder /app/out/full/ .
 RUN pnpm turbo run build --filter=web...
  
-FROM base AS runner
+FROM docker.io/base AS runner
 WORKDIR /app
  
 # Don't run production as root
